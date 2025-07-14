@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">cppnative</string>
+    <!--app_id-->
+    <string name="game_services_project_id" translatable="false">389806356374</string>
+    <!--package_name-->
+    <string name="package_name" translatable="false">com.vaibhavgpt.cppnative</string>
+</resources>
