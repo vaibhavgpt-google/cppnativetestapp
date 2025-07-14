@@ -1,10 +1,21 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+
 plugins {
     alias(libs.plugins.android.application)
 }
 
+
+
 android {
     namespace 'com.vaibhavgpt.cppnative'
     compileSdk 35
+
 
     defaultConfig {
         applicationId "com.vaibhavgpt.cppnative"
@@ -14,11 +25,11 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        externalNativeBuild {
-            cmake {
-                arguments "-DANDROID_STL=c++_shared"  // Set STL to shared
-            }
-        }
+//        externalNativeBuild {
+//            cmake {
+//                arguments "-DANDROID_STL=c++_shared"  // Set STL to shared
+//            }
+//        }
     }
 
     buildTypes {
@@ -41,6 +52,12 @@ android {
         viewBinding true
         prefab true
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
 }
 
 dependencies {
@@ -51,5 +68,6 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    implementation libs.play.services.games.v2
+//    implementation(libs.play.services.games.v2.native.c)
+    implementation(libs.play.services.games.v2)
 }

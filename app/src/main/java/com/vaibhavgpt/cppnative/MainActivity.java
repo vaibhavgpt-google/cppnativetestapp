@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     // Used to load the 'cppnative' library on application startup.
     static {
         System.loadLibrary("cppnative");
+        System.loadLibrary("gamesv2");
     }
 
     private ActivityMainBinding binding;
