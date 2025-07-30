@@ -4,4 +4,7 @@
     <string name="game_services_project_id" translatable="false">389806356374</string>
     <!--package_name-->
     <string name="package_name" translatable="false">com.vaibhavgpt.cppnative</string>
+    <!--achievement testings-->
+    <string name="achievement_testings" translatable="false">CgkIlu-TkqwLEAIQBA</string>
+    <string name="check_authentication">Check Authentication</string>
 </resources>

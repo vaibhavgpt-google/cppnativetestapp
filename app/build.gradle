@@ -10,12 +10,9 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
-
-
 android {
     namespace 'com.vaibhavgpt.cppnative'
     compileSdk 35
-
 
     defaultConfig {
         applicationId "com.vaibhavgpt.cppnative"
@@ -25,11 +22,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-//        externalNativeBuild {
-//            cmake {
-//                arguments "-DANDROID_STL=c++_shared"  // Set STL to shared
-//            }
-//        }
     }
 
     buildTypes {
@@ -50,18 +42,12 @@ android {
     }
     buildFeatures {
         viewBinding true
-        prefab true
-    }
-
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['src/main/jniLibs']
-        }
     }
 }
 
-dependencies {
 
+
+dependencies {
     implementation libs.appcompat
     implementation libs.material
     implementation libs.constraintlayout

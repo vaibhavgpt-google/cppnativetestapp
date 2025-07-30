@@ -6,14 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_is_authenticated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Is Authenticated?" />
+
+        <Button
+            android:id="@+id/btn_get_player_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Get Player ID" />
+
+        <Button
+            android:id="@+id/btn_request_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Server Access" />
+
+        <Button
+            android:id="@+id/btn_ach_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Achievement UI" />
+
+        <Button
+            android:id="@+id/btn_unlock_ach_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlock Achievement" />
+
+    </LinearLayout>
+
+
     <TextView
         android:id="@+id/sample_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Click a button to see the result."
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
